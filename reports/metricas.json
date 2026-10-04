@@ -1,0 +1,218 @@
+{
+  "problema": "classificacao binaria: alerta ignorado (prosseguiu=1) x respeitado (0)",
+  "split": {
+    "treino": [
+      "2026-02-02",
+      "2026-05-30"
+    ],
+    "teste": [
+      "2026-06-01",
+      "2026-06-30"
+    ],
+    "n_treino": 31316,
+    "n_teste": 9729,
+    "taxa_positiva_treino": 0.46634308340784264,
+    "taxa_positiva_teste": 0.5085825881385548
+  },
+  "n_features_entrada": 28,
+  "validacao_cruzada": {
+    "Baseline (classe majoritaria)": {
+      "roc_auc": 0.5,
+      "f1": 0.0,
+      "accuracy": 0.528875263460433,
+      "roc_auc_std": 0.0
+    },
+    "Regressao Logistica": {
+      "roc_auc": 0.7451431201938625,
+      "f1": 0.640771038411275,
+      "accuracy": 0.6811649741329757,
+      "roc_auc_std": 0.014080122745584641
+    },
+    "Random Forest": {
+      "roc_auc": 0.7321909599044076,
+      "f1": 0.6202506640554415,
+      "accuracy": 0.6682123012071278,
+      "roc_auc_std": 0.012676570923691411
+    },
+    "Gradient Boosting (HistGB)": {
+      "roc_auc": 0.7270017166630899,
+      "f1": 0.6259079383132089,
+      "accuracy": 0.6666794405058442,
+      "roc_auc_std": 0.025253408088780818
+    }
+  },
+  "modelo_escolhido": "Regressao Logistica",
+  "teste": {
+    "Baseline (classe majoritaria)": {
+      "accuracy": 0.49141741186144516,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.5085825881385548,
+      "brier": 0.5085825881385548
+    },
+    "Regressao Logistica": {
+      "accuracy": 0.6999691643539933,
+      "precision": 0.7021318987846185,
+      "recall": 0.7122069523039612,
+      "f1": 0.707133540684258,
+      "roc_auc": 0.7696789129430917,
+      "pr_auc": 0.7598606893778037,
+      "brier": 0.1953736993973541
+    },
+    "Random Forest": {
+      "accuracy": 0.694007606126015,
+      "precision": 0.7014925373134329,
+      "recall": 0.6934114793856103,
+      "f1": 0.6974286004675272,
+      "roc_auc": 0.7580132267022337,
+      "pr_auc": 0.74350695977689,
+      "brier": 0.20227435995193446
+    },
+    "Gradient Boosting (HistGB)": {
+      "accuracy": 0.6964744578065577,
+      "precision": 0.6938022148824557,
+      "recall": 0.7217057396928052,
+      "f1": 0.7074789499752353,
+      "roc_auc": 0.7651044614249647,
+      "pr_auc": 0.7547876801047909,
+      "brier": 0.19706103011333978
+    }
+  },
+  "controle_vazamento": {
+    "com_tempo_decisao_ms": {
+      "accuracy": 0.7989515880357694,
+      "precision": 0.7793129200896192,
+      "recall": 0.84357316087308,
+      "f1": 0.8101708074534162,
+      "roc_auc": 0.8813194347336542,
+      "pr_auc": 0.8693262800252396,
+      "brier": 0.13836270475322138
+    },
+    "sem (modelo final)": {
+      "accuracy": 0.6999691643539933,
+      "precision": 0.7021318987846185,
+      "recall": 0.7122069523039612,
+      "f1": 0.707133540684258,
+      "roc_auc": 0.7696789129430917,
+      "pr_auc": 0.7598606893778037,
+      "brier": 0.1953736993973541
+    }
+  },
+  "taxa_real_top20pct_risco": 0.8191161356628982,
+  "lift_por_decil": [
+    {
+      "decil": 1,
+      "alertas": 973,
+      "taxa_real": 0.8715313463514902,
+      "prob_media": 0.8399020232151297
+    },
+    {
+      "decil": 2,
+      "alertas": 973,
+      "taxa_real": 0.7667009249743063,
+      "prob_media": 0.7523291990284997
+    },
+    {
+      "decil": 3,
+      "alertas": 973,
+      "taxa_real": 0.6803699897225077,
+      "prob_media": 0.6804841863250151
+    },
+    {
+      "decil": 4,
+      "alertas": 973,
+      "taxa_real": 0.6618705035971223,
+      "prob_media": 0.6126187859462531
+    },
+    {
+      "decil": 5,
+      "alertas": 972,
+      "taxa_real": 0.5524691358024691,
+      "prob_media": 0.5450313442306586
+    },
+    {
+      "decil": 6,
+      "alertas": 973,
+      "taxa_real": 0.5118191161356629,
+      "prob_media": 0.47465815154795366
+    },
+    {
+      "decil": 7,
+      "alertas": 973,
+      "taxa_real": 0.40184994861253853,
+      "prob_media": 0.40053370387514475
+    },
+    {
+      "decil": 8,
+      "alertas": 973,
+      "taxa_real": 0.30318602261048305,
+      "prob_media": 0.32066536310325
+    },
+    {
+      "decil": 9,
+      "alertas": 973,
+      "taxa_real": 0.22302158273381295,
+      "prob_media": 0.2297725980795621
+    },
+    {
+      "decil": 10,
+      "alertas": 973,
+      "taxa_real": 0.1130524152106886,
+      "prob_media": 0.11822502074342413
+    }
+  ],
+  "importancia_permutacao_top10": [
+    {
+      "feature": "taxa_ignorar_hist",
+      "queda_auc": 0.1364998183832069,
+      "desvio": 0.0048414298064871865
+    },
+    {
+      "feature": "semana_prova",
+      "queda_auc": 0.02602789659566207,
+      "desvio": 0.001595933682439233
+    },
+    {
+      "feature": "categoria",
+      "queda_auc": 0.02380442017477491,
+      "desvio": 0.0007640831702722084
+    },
+    {
+      "feature": "exposicao",
+      "queda_auc": 0.016036282358699205,
+      "desvio": 0.0020126075146199704
+    },
+    {
+      "feature": "treinado_ia",
+      "queda_auc": 0.005940983190677107,
+      "desvio": 0.0004935120590217013
+    },
+    {
+      "feature": "local",
+      "queda_auc": 0.003501680676037311,
+      "desvio": 0.001095073517523601
+    },
+    {
+      "feature": "noturno",
+      "queda_auc": 0.0026246028934405973,
+      "desvio": 0.0014524424928554697
+    },
+    {
+      "feature": "catalogado_interno",
+      "queda_auc": 0.0024296931605102047,
+      "desvio": 0.0005179587212618248
+    },
+    {
+      "feature": "log_alertas_previos_dia",
+      "queda_auc": 0.0007272038893540334,
+      "desvio": 0.00012879863115291103
+    },
+    {
+      "feature": "turno",
+      "queda_auc": 0.0006393103302478664,
+      "desvio": 6.579608346920153e-05
+    }
+  ]
+}
