@@ -1,0 +1,11 @@
+data_inicio,data_fim,evento,tipo
+2026-02-02,2026-02-06,Semana de acolhimento e inicio das aulas,inicio_aulas
+2026-02-16,2026-02-18,Recesso de Carnaval,recesso
+2026-03-23,2026-03-27,Entrega de trabalhos do 1o bimestre,entrega_trabalhos
+2026-04-06,2026-04-10,Semana de provas P1,semana_prova
+2026-05-11,2026-05-15,Semana academica,evento_academico
+2026-05-25,2026-05-29,Entrega de trabalhos do 2o bimestre e TCC parcial,entrega_trabalhos
+2026-06-05,2026-06-05,Ponte de Corpus Christi,recesso
+2026-06-08,2026-06-12,Semana de provas P2,semana_prova
+2026-06-22,2026-06-26,Provas substitutivas e exames,semana_prova
+2026-06-29,2026-06-30,Fechamento do semestre,encerramento

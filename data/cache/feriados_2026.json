@@ -1,0 +1,15 @@
+[
+  {"date": "2026-01-01", "name": "Confraternizacao mundial", "type": "national"},
+  {"date": "2026-02-17", "name": "Carnaval", "type": "national"},
+  {"date": "2026-04-03", "name": "Sexta-feira Santa", "type": "national"},
+  {"date": "2026-04-05", "name": "Pascoa", "type": "national"},
+  {"date": "2026-04-21", "name": "Tiradentes", "type": "national"},
+  {"date": "2026-05-01", "name": "Dia do trabalho", "type": "national"},
+  {"date": "2026-06-04", "name": "Corpus Christi", "type": "national"},
+  {"date": "2026-09-07", "name": "Independencia do Brasil", "type": "national"},
+  {"date": "2026-10-12", "name": "Nossa Senhora Aparecida", "type": "national"},
+  {"date": "2026-11-02", "name": "Finados", "type": "national"},
+  {"date": "2026-11-15", "name": "Proclamacao da Republica", "type": "national"},
+  {"date": "2026-11-20", "name": "Dia da consciencia negra", "type": "national"},
+  {"date": "2026-12-25", "name": "Natal", "type": "national"}
+]
