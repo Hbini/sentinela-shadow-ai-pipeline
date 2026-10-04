@@ -1,0 +1,31 @@
+dominio,servico,categoria,politica
+chatgpt.com,ChatGPT,chat_llm,warn
+chat.openai.com,ChatGPT (legado),chat_llm,warn
+gemini.google.com,Gemini (Workspace edu),chat_llm,allow
+copilot.microsoft.com,Copilot (licenca institucional),chat_llm,allow
+claude.ai,Claude,chat_llm,warn
+chat.deepseek.com,DeepSeek,chat_llm,warn
+perplexity.ai,Perplexity,pesquisa_academica,warn
+meta.ai,Meta AI,chat_llm,warn
+poe.com,Poe,chat_llm,warn
+character.ai,Character.AI,chat_llm,block
+quillbot.com,QuillBot,escrita_parafrase,warn
+grammarly.com,Grammarly,escrita_parafrase,warn
+rytr.me,Rytr,escrita_parafrase,warn
+humanizeai.pro,Humanize AI,escrita_parafrase,block
+undetectable.ai,Undetectable AI,escrita_parafrase,block
+stealthwriter.ai,StealthWriter,ESCRITA_PARAFRASE,block
+photomath.com,Photomath,resolucao_exercicios,warn
+brainly.com.br,Brainly,resolucao_exercicios,warn
+gauthmath.com,Gauth,resolucao_exercicios,warn
+cursor.com,Cursor,codigo,warn
+replit.com,Replit,codigo,warn
+v0.dev,v0,codigo,warn
+midjourney.com,Midjourney,imagem_video,warn
+leonardo.ai,Leonardo,IMAGEM_VIDEO,warn
+suno.com,Suno,audio,warn
+elevenlabs.io,ElevenLabs,audio,warn
+gamma.app,Gamma,apresentacao,warn
+scispace.com,SciSpace,PESQUISA_ACADEMICA,warn
+consensus.app,Consensus,pesquisa_academica,warn
+chatpdf.com,ChatPDF,pesquisa_academica,warn
