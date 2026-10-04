@@ -2,19 +2,19 @@
   "usuarios_brutos": 658,
   "usuarios_duplicados_removidos": 8,
   "categorias_padronizadas": 3,
-  "servicos_no_catalogo_externo": 42,
-  "tamanho_catalogo_externo": 60,
-  "eventos_brutos": 51210,
-  "eventos_duplicados_removidos": 1491,
-  "dominios_normalizados": 2436,
-  "exposicao_nula_imputada": 488,
+  "servicos_no_catalogo_externo": 17,
+  "tamanho_catalogo_externo": 235,
+  "eventos_brutos": 50713,
+  "eventos_duplicados_removidos": 1477,
+  "dominios_normalizados": 2429,
+  "exposicao_nula_imputada": 483,
   "eventos_quarentena": 40,
-  "eventos_carregados": 49679,
-  "alertas_warn": 41045,
-  "taxa_prosseguiu": 0.4764,
+  "eventos_carregados": 49196,
+  "alertas_warn": 40870,
+  "taxa_prosseguiu": 0.4762,
   "fontes": {
-    "feriados": "snapshot_local",
-    "catalogo_externo": "snapshot_local",
+    "feriados": "brasilapi",
+    "catalogo_externo": "github:abixb/llm-hosts-blocklist",
     "calendario": "data/raw/calendario_academico_2026.csv",
     "eventos": "data/raw/sentinela_eventos.jsonl (simulado, semente 42)"
   },
@@ -23,9 +23,9 @@
     "dim_usuario": 650,
     "dim_estacao": 120,
     "dim_servico": 42,
-    "fato_evento_acesso": 49679,
+    "fato_evento_acesso": 49196,
     "quarentena_eventos": 40,
-    "vw_base_alertas": 41045
+    "vw_base_alertas": 40870
   },
-  "executado_em": "2026-10-02 21:47:49"
+  "executado_em": "2026-10-04 13:11:11"
 }

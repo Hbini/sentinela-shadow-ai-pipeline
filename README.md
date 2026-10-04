@@ -196,23 +196,23 @@ Excluídas de propósito: `evento_id`, `dominio` (coberto por `categoria`) e **`
 
 ## 7. Modelagem e avaliação
 
-* **Split temporal:** treino de 02/02 a 31/05/2026 (31.316 alertas), teste em junho/2026 (9.729 alertas).
+* **Split temporal:** treino de 02/02 a 31/05/2026 (31.360 alertas), teste em junho/2026 (9.510 alertas).
 * **Seleção:** `TimeSeriesSplit` com 5 dobras no treino, métrica ROC-AUC.
 * **Pré-processamento dentro do `Pipeline`** (`StandardScaler` + `OneHotEncoder`), sem vazamento entre dobras.
 
-### Resultados (semente 42)
+### Resultados (execução de 04/10/2026, semente 42, fontes ao vivo: BrasilAPI e GitHub)
 
 | Modelo | ROC-AUC CV | ROC-AUC teste | F1 teste | Accuracy teste | PR-AUC teste |
 |--------|-----------:|--------------:|---------:|---------------:|-------------:|
-| Baseline (classe majoritária) | 0,500 | 0,500 | 0,000 | 0,491 | 0,509 |
-| **Regressão Logística (escolhido)** | **0,745** | **0,770** | **0,707** | **0,700** | **0,760** |
-| Random Forest | 0,732 | 0,758 | 0,697 | 0,694 | 0,744 |
-| Gradient Boosting (HistGB) | 0,727 | 0,765 | 0,708 | 0,697 | 0,755 |
+| Baseline (classe majoritária) | 0,500 | 0,500 | 0,000 | 0,481 | 0,519 |
+| **Regressão Logística (escolhido)** | **0,740** | **0,763** | **0,709** | **0,695** | **0,760** |
+| Random Forest | 0,729 | 0,752 | 0,692 | 0,685 | 0,749 |
+| Gradient Boosting (HistGB) | 0,726 | 0,759 | 0,706 | 0,691 | 0,756 |
 
 | Controle de vazamento | ROC-AUC teste |
 |-----------------------|--------------:|
-| Modelo final (sem `tempo_decisao_ms`) | 0,770 |
-| Mesmo problema **com** `tempo_decisao_ms` | 0,882 (ganho ilusório, variável indisponível no momento do alerta) |
+| Modelo final (sem `tempo_decisao_ms`) | 0,763 |
+| Mesmo problema **com** `tempo_decisao_ms` | 0,889 (ganho ilusório, variável indisponível no momento do alerta) |
 
 > Os números podem variar levemente se a BrasilAPI ou o catálogo do GitHub devolverem dados diferentes dos
 > snapshots, pois essas fontes alimentam a simulação e as features.
@@ -221,7 +221,7 @@ Excluídas de propósito: `evento_id`, `dominio` (coberto por `categoria`) e **`
 * A **Regressão Logística** venceu na validação e no teste: os efeitos são em grande parte aditivos, e um modelo
   linear é interpretável e leve (roda em CPU, requisito do Sentinela).
 * **Priorização:** nos 20% de alertas com maior risco previsto, cerca de **82%** foram de fato ignorados, contra
-  51% na média do teste (ver `reports/figuras/lift_decis.png`).
+  52% na média do teste (ver `reports/figuras/lift_decis.png`).
 * **Fatores principais** (importância por permutação): histórico do usuário, semana de provas, categoria do serviço,
   exposição de contexto e treinamento em IA (efeito protetor), local da estação e período noturno.
 * **Ação sugerida:** letramento em IA focado em alunos antes das semanas de prova e de entrega de trabalhos, e revisão
